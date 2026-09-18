@@ -1,0 +1,226 @@
+@import './tokens.css';
+
+/* ------------------------------------------------------------------ reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: auto; /* Lenis owns smooth scrolling */
+}
+
+#root {
+  min-height: 100%;
+}
+
+body {
+  background: var(--void);
+  color: var(--off-white);
+  font-family: var(--body);
+  font-size: var(--t-base);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--void);
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold-bright);
+  outline-offset: 3px;
+}
+
+/* skip link for keyboard users */
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 999;
+  background: var(--gold);
+  color: var(--void);
+  padding: 0.75rem 1.25rem;
+  font-family: var(--display);
+  font-weight: 700;
+}
+.skip:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+/* -------------------------------------------------------------- headings */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--display);
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--t-xl);
+}
+h2 {
+  font-size: var(--t-lg);
+}
+h3 {
+  font-size: var(--t-md);
+}
+
+p {
+  max-width: var(--read);
+  color: var(--muted-white);
+  text-wrap: pretty;
+}
+
+/* -------------------------------------------------------------- layout */
+.shell {
+  width: min(100% - (var(--gut) * 2), var(--maxw));
+  margin-inline: auto;
+}
+
+.page {
+  padding-top: clamp(7rem, 14vh, 10rem);
+  padding-bottom: var(--section);
+  min-height: 100svh;
+}
+
+.stack {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.rule {
+  height: 1px;
+  background: var(--hairline);
+  border: 0;
+}
+
+/* -------------------------------------------------------------- bevel box
+   The logo is a cut hexagon. Every container in the site borrows the same
+   two cut corners rather than a uniform radius, so panels read as part of
+   the mark instead of generic cards. */
+.bevel {
+  --b: var(--bevel);
+  clip-path: polygon(var(--b) 0, 100% 0, 100% calc(100% - var(--b)), calc(100% - var(--b)) 100%, 0 100%, 0 var(--b));
+  background: var(--charcoal);
+}
+
+/* -------------------------------------------------------------- buttons */
+.btn {
+  --b: 12px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.95rem 1.7rem;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: var(--t-sm);
+  letter-spacing: 0.06em;
+  border: 0;
+  cursor: pointer;
+  background: var(--gold);
+  color: var(--void);
+  clip-path: polygon(var(--b) 0, 100% 0, 100% calc(100% - var(--b)), calc(100% - var(--b)) 100%, 0 100%, 0 var(--b));
+  transition: background var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+  will-change: transform;
+}
+
+.btn:hover {
+  background: var(--gold-bright);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--off-white);
+  box-shadow: inset 0 0 0 1px var(--hairline-strong);
+}
+
+.btn--ghost:hover {
+  background: var(--gold-veil);
+  color: var(--gold-bright);
+  box-shadow: inset 0 0 0 1px rgba(233, 172, 32, 0.5);
+}
+
+/* -------------------------------------------------------------- helpers */
+.gold {
+  color: var(--gold);
+}
+
+.lede {
+  font-size: var(--t-md);
+  line-height: 1.5;
+  color: var(--off-white);
+  max-width: 46ch;
+  font-weight: 500;
+}
+
+.meta {
+  font-family: var(--display);
+  font-size: var(--t-xs);
+  letter-spacing: 0.22em;
+  color: var(--muted-white);
+  font-weight: 600;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* hide the native cursor only where we draw our own */
+@media (hover: hover) and (pointer: fine) {
+  body.has-cursor,
+  body.has-cursor a,
+  body.has-cursor button {
+    cursor: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

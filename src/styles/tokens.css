@@ -1,0 +1,58 @@
+/* ------------------------------------------------------------------
+   MALBRO GAMES — design tokens
+   Palette is the studio's own brand sheet. Do not add colours here
+   without updating the brand sheet too.
+-------------------------------------------------------------------*/
+:root {
+  /* brand palette */
+  --void: #080808; /* main background          */
+  --charcoal: #151515; /* sections / cards         */
+  --graphite: #292929; /* borders / dividers       */
+  --off-white: #f5f5f2; /* primary text             */
+  --muted-white: #b8b8b2; /* secondary text           */
+  --gold: #e9ac20; /* primary brand            */
+  --gold-bright: #f5b916; /* buttons / highlights     */
+  --gold-dark: #8a6412; /* shadows / gradients      */
+
+  /* derived surfaces */
+  --hairline: rgba(245, 245, 242, 0.09);
+  --hairline-strong: rgba(245, 245, 242, 0.18);
+  --gold-veil: rgba(233, 172, 32, 0.14);
+  --gold-glow: 0 0 0 1px rgba(233, 172, 32, 0.45), 0 12px 40px -12px rgba(233, 172, 32, 0.55);
+  --lift: 0 24px 60px -30px rgba(0, 0, 0, 0.95);
+
+  /* type */
+  --display: 'Chakra Petch', 'Segoe UI', sans-serif;
+  --body: 'Manrope', system-ui, -apple-system, sans-serif;
+
+  /* modular scale — 1.333 perfect fourth, fluid */
+  --t-xs: clamp(0.72rem, 0.7rem + 0.1vw, 0.78rem);
+  --t-sm: clamp(0.84rem, 0.8rem + 0.2vw, 0.94rem);
+  --t-base: clamp(1rem, 0.95rem + 0.25vw, 1.12rem);
+  --t-md: clamp(1.25rem, 1.1rem + 0.6vw, 1.55rem);
+  --t-lg: clamp(1.7rem, 1.35rem + 1.5vw, 2.6rem);
+  --t-xl: clamp(2.4rem, 1.6rem + 3.4vw, 4.6rem);
+  --t-2xl: clamp(3.2rem, 1.4rem + 7vw, 8rem);
+
+  /* rhythm */
+  --gut: clamp(1.25rem, 4vw, 2.5rem);
+  --section: clamp(5rem, 11vw, 10rem);
+  --maxw: 1240px;
+  --read: 62ch;
+
+  /* motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.76, 0, 0.24, 1);
+  --dur-fast: 0.22s;
+  --dur: 0.5s;
+
+  /* the bevel derived from the logo's hexagon — used instead of radii */
+  --bevel: 14px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0.01ms;
+    --dur: 0.01ms;
+  }
+}
