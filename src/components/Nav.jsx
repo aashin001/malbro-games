@@ -85,6 +85,10 @@ export default function Nav() {
                 </motion.li>
               ))}
             </ul>
+            <Link to="/contact" className="drawer__link drawer__work">
+              <span className="drawer__idx">05</span>
+              Work with us
+            </Link>
             <a className="drawer__mail" href={`mailto:${studio.email}`}>
               {studio.email}
             </a>

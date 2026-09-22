@@ -12,7 +12,7 @@ export default function Game() {
       />
 
       <header className="phead">
-        <p className="meta">03 — Upcoming</p>
+        <p className="meta">Upcoming</p>
         <div className="game__titlerow">
           <SplitText as="h1" className="phead__title" text={game.title} step={0.04} />
           <Reveal delay={0.25}>

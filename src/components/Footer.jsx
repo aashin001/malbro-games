@@ -33,8 +33,8 @@ export default function Footer() {
         </div>
       </div>
       <div className="shell footer__base">
-        <span>© {new Date().getFullYear()} MALBRO GAMES</span>
-        <span>Made by three friends</span>
+        <span>© {new Date().getFullYear()} MALBRO GAMES. All rights reserved.</span>
+        <span>Built with passion for games.</span>
       </div>
     </footer>
   );

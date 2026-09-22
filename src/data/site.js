@@ -13,18 +13,18 @@ export const studio = {
 };
 
 export const nav = [
-  { path: '/', label: 'Home', index: '01' },
-  { path: '/about', label: 'About', index: '02' },
-  { path: '/game', label: 'Upcoming', index: '03' },
-  { path: '/team', label: 'Team', index: '04' },
-  { path: '/contact', label: 'Contact', index: '05' },
+  { path: '/', label: 'Home'},
+  { path: '/about', label: 'About' },
+  { path: '/game', label: 'Upcoming'},
+  { path: '/team', label: 'Team'},
 ];
 
 export const about = {
-  title: 'Three friends, one studio',
+  title: 'From Ideas to Experiences',
   body: [
-    'MALBRO GAMES started with three friends who shared the same passion for games and a dream of creating something of their own. What began as a small indie team is now taking its first steps into game development with our very first hyper-casual mobile game, currently in development and preparing for launch.',
-    'For us, this is just the beginning. We want to explore different ideas, genres, and ways of creating memorable gaming experiences. As we grow, our goal is to build more original games and turn MALBRO GAMES into a studio where three friends can turn their ideas into games that people around the world can enjoy.',
+    'MALBRO GAMES is an independent game studio driven by creativity, experimentation, and a passion for interactive entertainment. We’re focused on creating original games that combine engaging gameplay with distinctive visual experiences.',
+    'Our journey begins with our first hyper-casual mobile game, currently in development and preparing for launch. It marks the first step toward building a studio capable of exploring new ideas, genres, and gameplay experiences.',
+    'For us, this is only the beginning. Our ambition is to create original games, experiment with new concepts, and build experiences that players around the world can enjoy.'
   ],
   facts: [
     { k: 'Founded by', v: 'Three friends' },
@@ -44,7 +44,7 @@ export const game = {
   ],
   specs: [
     { k: 'Genre', v: 'Hyper-casual' },
-    { k: 'Made for', v: 'Kids and families' },
+    // { k: 'Made for', v: 'Kids and families' },
     { k: 'Platforms', v: 'Google Play, App Store' },
     { k: 'Release', v: 'To be announced' },
   ],
@@ -60,22 +60,29 @@ export const team = [
   {
     name: 'Aditya',
     role: 'Founder & Game Designer',
-    photo: '/assets/team-aditya.jpg',
-    placeholder: true,
-    bio: 'Aditya is the founder of MALBRO GAMES and a passionate game designer. With two years of experience working at a AAA game studio, he wanted to take the next step and build something of his own. That idea became MALBRO GAMES — a studio built with friends and driven by a shared passion for creating games.',
+    photo: '/assets/team-aditya.jpeg',
+    // placeholder: false,
+    bio:[ 'Aditya is the founder of MALBRO GAMES and a passionate game designer with professional experience in the AAA game industry. Driven by a vision to build something of his own, he founded MALBRO GAMES with a focus on creating original and engaging gaming experiences.',
+          'With a strong foundation in game design and development, Aditya leads the studio’s creative direction and works toward turning ambitious ideas into playable experiences.'
+    ]
   },
   {
     name: 'Roshith',
     role: 'Co-Founder & Game Designer',
-    photo: '/assets/team-roshith.jpg',
-    placeholder: true,
-    bio: 'Roshith is a game designer with experience in the hyper-casual gaming industry. Having worked at a hyper-casual game studio in Chennai, he has been involved in developing and launching multiple games on the Google Play Store. He brings hands-on experience in designing simple, engaging, and accessible mobile games.',
+    photo: '/assets/team-roshith.jpeg',
+    // placeholder: true,
+    bio: [ 'Roshith is a game designer with experience in the hyper-casual gaming industry. Having worked at a hyper-casual game studio in Chennai, he has contributed to the development and launch of multiple mobile games on the Google Play Store and app store',
+          'With hands-on experience in game design, gameplay mechanics, and mobile game development, he focuses on creating accessible, engaging experiences that are simple to learn and enjoyable to play.',
+        // 'Focus:     Game Design     • Gameplay Mechanics     • Mobile Games     • Player Experience'
+      ]
   },
   {
     name: 'Abhijith',
-    role: 'Co-Founder & 3D Generalist',
-    photo: '/assets/team-abhijith.jpg',
-    placeholder: false,
-    bio: 'Abhijith is a 3D Generalist and game artist with more than two years of experience in the 3D and interactive media industry. At MALBRO GAMES, he handles the visual side of the games, working across 3D modeling, environments, assets, and other game art to bring the team’s ideas to life.',
+    role: 'Co-Founder & Game Artist',
+    photo: '/assets/team-abhijith.jpeg',
+    // placeholder: false,
+    bio:[ 'Abijith is a Game Artist and 3D Generalist with over years of professional experience in 3D and interactive media. At MALBRO GAMES, he focuses on the visual development of the studio’s games, creating 3D assets, environments, and real-time game content.',
+          'He combines artistic direction with technical 3D skills to transform ideas into polished, game-ready visuals and help establish the visual identity of MALBRO GAMES.'
+    ]
   },
 ];

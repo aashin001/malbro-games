@@ -331,3 +331,6 @@
     display: none;
   }
 }
+.member__bio p + p {
+  margin-top: 1em;
+}

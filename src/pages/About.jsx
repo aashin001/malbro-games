@@ -12,7 +12,7 @@ export default function About() {
       />
 
       <header className="phead">
-        <p className="meta">02 — About</p>
+        <p className="meta">About</p>
         <SplitText as="h1" className="phead__title" text={about.title} step={0.022} />
       </header>
 
@@ -28,14 +28,14 @@ export default function About() {
         <hr className="rule about__rule" />
       </Reveal>
 
-      <ul className="factbar factbar--wide">
+      {/* <ul className="factbar factbar--wide">
         {about.facts.map((f, i) => (
           <Reveal as="li" key={f.k} delay={i * 0.06} className="factbar__item">
             <span className="factbar__k">{f.k}</span>
             <span className="factbar__v">{f.v}</span>
           </Reveal>
         ))}
-      </ul>
+      </ul> */}
 
       <Reveal className="about__next" delay={0.1}>
         <p className="lede">The first thing we are building is already playable in our heads.</p>

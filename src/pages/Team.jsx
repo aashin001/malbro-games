@@ -11,7 +11,7 @@ export default function Team() {
       />
 
       <header className="phead">
-        <p className="meta">04 — Team</p>
+        <p className="meta">Team</p>
         <SplitText as="h1" className="phead__title" text="Meet the team" step={0.028} />
       </header>
 
@@ -25,7 +25,15 @@ export default function Team() {
             <div className="member__text">
               <h2 className="member__name">{m.name}</h2>
               <p className="member__role">{m.role}</p>
-              <p className="member__bio">{m.bio}</p>
+              <div className="member__bio">
+                {Array.isArray(m.bio) ? (
+                  m.bio.map((paragraph, index) => (
+                    <p key={index}>{paragraph}</p>
+                  ))
+                ) : (
+                  <p>{m.bio}</p>
+                )}
+              </div>
             </div>
           </Reveal>
         ))}

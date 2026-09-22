@@ -60,7 +60,7 @@ export default function Contact() {
       />
 
       <header className="phead">
-        <p className="meta">05 — Contact</p>
+        <p className="meta">Contact</p>
         <SplitText as="h1" className="phead__title" text="Talk to us" step={0.03} />
         <Reveal delay={0.1}>
           <p className="lede">
