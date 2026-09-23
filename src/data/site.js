@@ -29,7 +29,7 @@ export const about = {
   facts: [
     { k: 'Founded by', v: 'Three friends' },
     { k: 'First title', v: 'In development' },
-    { k: 'Platforms', v: 'iOS & Android' },
+    { k: 'Platforms', v: 'Android' },
     { k: 'Based in', v: 'India' },
   ],
 };
@@ -45,7 +45,7 @@ export const game = {
   specs: [
     { k: 'Genre', v: 'Hyper-casual' },
     // { k: 'Made for', v: 'Kids and families' },
-    { k: 'Platforms', v: 'Google Play, App Store' },
+    { k: 'Platforms', v: 'Google Play' },
     { k: 'Release', v: 'To be announced' },
   ],
   keyart: '/assets/game-keyart.jpg',
@@ -77,7 +77,7 @@ export const team = [
       ]
   },
   {
-    name: 'Abhijith',
+    name: 'Abijith',
     role: 'Co-Founder & Game Artist',
     photo: '/assets/team-abhijith.jpeg',
     // placeholder: false,

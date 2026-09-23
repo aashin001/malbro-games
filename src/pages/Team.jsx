@@ -7,7 +7,7 @@ export default function Team() {
     <main className="page shell" id="main">
       <Seo
         title="Team"
-        description="Meet Aditya, Roshith and Abhijith — the three friends behind MALBRO GAMES."
+        description="Meet Aditya, Roshith and Abijith — the three friends behind MALBRO GAMES."
       />
 
       <header className="phead">

@@ -70,7 +70,7 @@ filename** and nothing else needs changing.
 | ---------------------- | -------------------------------------------- | ----------------------- |
 | `logo-mark.png`        | Hexagon mark, background removed, transparent | No                      |
 | `logo-lockup.png`      | Full horizontal lockup, transparent           | No                      |
-| `team-abhijith.jpg`    | Abhijith's photo, converted to black & white  | No                      |
+| `team-abhijith.jpg`    | Abijith's photo, converted to black & white  | No                      |
 | `team-aditya.jpg`      | **Placeholder**                               | Yes — real photo        |
 | `team-roshith.jpg`     | **Placeholder**                               | Yes — real photo        |
 | `game-keyart.jpg`      | Demo concept art, black & white               | Yes — when art is ready |

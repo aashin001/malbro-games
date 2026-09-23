@@ -86,7 +86,7 @@ export default function Nav() {
               ))}
             </ul>
             <Link to="/contact" className="drawer__link drawer__work">
-              <span className="drawer__idx">05</span>
+              <span className="drawer__idx"></span>
               Work with us
             </Link>
             <a className="drawer__mail" href={`mailto:${studio.email}`}>

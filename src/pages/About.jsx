@@ -24,9 +24,9 @@ export default function About() {
         ))}
       </div>
 
-      <Reveal>
+      {/* <Reveal>
         <hr className="rule about__rule" />
-      </Reveal>
+      </Reveal> */}
 
       {/* <ul className="factbar factbar--wide">
         {about.facts.map((f, i) => (

@@ -46,7 +46,7 @@ export default function Game() {
         ))}
       </ul>
 
-      <section className="shots">
+      {/* <section className="shots">
         <Reveal>
           <h2 className="shots__title">Early screens</h2>
         </Reveal>
@@ -57,7 +57,7 @@ export default function Game() {
             </Reveal>
           ))}
         </ul>
-      </section>
+      </section> */}
 
       <Reveal className="about__next" delay={0.1}>
         <p className="lede">Want to know when it launches?</p>
