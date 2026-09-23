@@ -48,7 +48,7 @@ export const game = {
     { k: 'Platforms', v: 'Google Play' },
     { k: 'Release', v: 'To be announced' },
   ],
-  keyart: '/assets/game-keyart.jpg',
+  keyart: '/assets/game-keyart.png',
   screens: [
     { src: '/assets/game-screen-1.jpg', alt: 'Concept screen: stacking blocks with a running score' },
     { src: '/assets/game-screen-2.jpg', alt: 'Concept screen: level path with collectible nodes' },
@@ -80,7 +80,7 @@ export const team = [
     name: 'Abijith',
     role: 'Co-Founder & Game Artist',
     photo: '/assets/team-abhijith.jpeg',
-    // placeholder: false,
+    // placeholder: true,
     bio:[ 'Abijith is a Game Artist and 3D Generalist with over years of professional experience in 3D and interactive media. At MALBRO GAMES, he focuses on the visual development of the studio’s games, creating 3D assets, environments, and real-time game content.',
           'He combines artistic direction with technical 3D skills to transform ideas into polished, game-ready visuals and help establish the visual identity of MALBRO GAMES.'
     ]
